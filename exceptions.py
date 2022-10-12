@@ -1,8 +1,12 @@
-class InsufficientCapacity(Exception):
+class InsufficientCapacityError(Exception):
     pass
 
 
-class InsufficientSupply(Exception):
+class ShopCapacityError(InsufficientCapacityError):
+    pass
+
+
+class InsufficientSupplyError(Exception):
     pass
 
 
