@@ -50,6 +50,8 @@ def main():
         except InsufficientCapacityError:
             print('Не хватает свободного места')
         else:
+            print(f'На складе хранится:\n{warehouse}')
+            print(f'В магазине хранится:\n{shop}')
             # Ask if user wants to continue, if not, exit the loop
             user_input = input('Another request? Y/N')
             if user_input.lower() == 'n':
